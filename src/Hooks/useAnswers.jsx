@@ -1,5 +1,5 @@
-import {useEffect, useState} from "react";
-import {getDatabase, ref, query, orderByKey, get} from "firebase/database";
+import { get, getDatabase, orderByKey, query, ref } from "firebase/database";
+import { useEffect, useState } from "react";
 
 export default function useAnswers(videID){
     const [loading, setLoading] = useState(true);
